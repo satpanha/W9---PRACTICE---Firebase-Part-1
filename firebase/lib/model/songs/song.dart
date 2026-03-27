@@ -4,13 +4,15 @@ class Song {
   final String artistId;
   final Duration duration;
   final Uri imageUrl;
+  final String artistGenre;
+  final String artistName;
 
   Song({
     required this.id,
     required this.title,
     required this.artistId,
     required this.duration,
-    required this.imageUrl,
+    required this.imageUrl, required this.artistGenre, required this.artistName,
   });
 
   @override

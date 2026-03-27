@@ -13,10 +13,6 @@ class ArtistViewModel  extends ChangeNotifier{
     _init();
   }
 
-  @override
-  void dispose(){
-    super.dispose();
-  }
 
   void _init() async {
     fetchArtist();

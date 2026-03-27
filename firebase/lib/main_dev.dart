@@ -27,6 +27,8 @@ List<InheritedProvider> get devProviders {
     ),
 
     Provider<ArtistRepository>(create: (_) => ArtistRepositoryFirebase()),
+
+    Provider<SongRepository>(create: (_) => SongRepositoryFirebase()),
   ];
 }
 

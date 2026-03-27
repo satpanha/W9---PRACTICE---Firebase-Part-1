@@ -23,7 +23,7 @@ class SongTile extends StatelessWidget {
           borderRadius: BorderRadius.circular(15),
         ),
         child: ListTile(
-          subtitle: Text(song.artistId),
+          subtitle: Text('${song.artistName} - ${song.artistGenre}'),
           leading: CircleAvatar(
             foregroundImage: NetworkImage(song.imageUrl.toString()),
           ),
