@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../../../model/songs/song.dart';
 
 class SongTile extends StatelessWidget {
@@ -21,9 +20,13 @@ class SongTile extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           color: Colors.white,
-          borderRadius: BorderRadius.circular(15)
+          borderRadius: BorderRadius.circular(15),
         ),
         child: ListTile(
+          subtitle: Text(song.artistId),
+          leading: CircleAvatar(
+            foregroundImage: NetworkImage(song.imageUrl.toString()),
+          ),
           onTap: onTap,
           title: Text(song.title),
           trailing: Text(
